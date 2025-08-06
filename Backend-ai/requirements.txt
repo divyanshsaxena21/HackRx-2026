@@ -12,3 +12,4 @@ requests
 sentence-transformers
 spacy
 groq
+en-core-web-sm
