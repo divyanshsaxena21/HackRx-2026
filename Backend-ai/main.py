@@ -14,8 +14,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from groq import Groq
 import spacy
 import re as re
+import en_core_web_sm
 
-nlp = spacy.load("en_core_web_sm")
+nlp = en_core_web_sm.load()
+
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
 # ---------- Setup ----------
